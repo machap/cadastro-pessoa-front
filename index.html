@@ -29,8 +29,38 @@
     </div>
 
     <button class="btn btn-primary" type="submit">Incluir</button>
+
+    <button class="btn btn-primary" type="button" onclick="pessoaController.importaPessoas()">Carregar Tabela</button>
 </form>
 
+<br>
+
+<table class="table table-hover table-bordered">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>NOME</th>
+        <th>IDADE</th>
+        <th>EMAIL</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    </tbody>
+
+    <tfoot>
+    </tfoot>
+</table>
+
 <script src="js/model/Pessoa.js"></script>
+<script src="js/controller/PessoaController.js"></script>
+<script src="js/model/ListaPessoas.js"></script>
+<script src="js/service/PessoaService.js"></script>
+<script src="js/service/HttpService.js"></script>
+
+<script>
+    let pessoaController = new PessoaController();
+</script>
+
 </body>
 </html>
