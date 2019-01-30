@@ -1,9 +1,13 @@
 class Pessoa {
-    constructor(nome, idade, email) {
-        this._id = 0;
+    constructor(id, nome, idade, email) {
+        this._id = id;
         this._nome = nome;
         this._idade = idade;
         this._email = email;
+    }
+
+    get id() {
+        return this._id;
     }
 
     get nome() {
